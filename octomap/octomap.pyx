@@ -57,7 +57,7 @@ cdef class OcTreeNode:
         if self.thisptr:
             return True
         else:
-            retrun False
+            return False
     def addValue(self, float p):
         """
         adds p to the node's logOdds value (with no boundary / threshold checking!)
