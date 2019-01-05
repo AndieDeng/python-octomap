@@ -53,6 +53,11 @@ cdef class OcTreeNode:
         pass
     def __dealloc__(self):
         pass
+    def isNull(self):
+        if self.thisptr:
+            return True
+        else:
+            retrun False
     def addValue(self, float p):
         """
         adds p to the node's logOdds value (with no boundary / threshold checking!)
